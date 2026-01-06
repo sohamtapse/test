@@ -1,9 +1,6 @@
 "use client";
 
-import { useEffect, useState, ReactNode } from "react";
-import { useRouter } from "next/navigation";
-import axios from "axios";
-import { useSession } from "next-auth/react";
+
 
 export default function ProtectedLayout({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
