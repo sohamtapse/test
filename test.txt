@@ -1,11 +1,7 @@
 "use client";
 
-soham tapse
-
 export default function ProtectedLayout({ children }: { children: ReactNode }) {
-  const [loading, setLoading] = useState(true);
-  const router = useRouter();
-  const { data: session, status } = useSession();
+  
 
   useEffect(() => {
     // If NextAuth reports an authenticated session, we're done.
